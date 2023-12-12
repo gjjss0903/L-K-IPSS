@@ -1,0 +1,202 @@
+* {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #999;
+}
+#wrap {
+  max-width: 1080px;
+  width: 100%;
+  background-color: #fff;
+  border: 1.5px solid black;
+  padding: 50px;
+}
+.Q {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.tilte {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+.tilte h2 {
+  font-weight: bold;
+  font-size: 22px;
+}
+.select-title,
+.select {
+  width: 80%;
+  text-align: center;
+  display: flex;
+}
+.select-title span,
+.select span {
+  flex: 1;
+  border: 1px solid black;
+  padding: 5% 0px;
+  width: 100%;
+  background-color: #fff;
+  border-right: 0;
+  font-weight: 700;
+  font-size: 24px;
+}
+.select-title span {
+  border-bottom: 0px;
+}
+.select span {
+  cursor: pointer;
+}
+.select-title span:nth-last-child(1) {
+  border-right: 1px solid black;
+  padding: 7% 0px;
+}
+.select-title span:nth-of-type(1) {
+  padding: 7% 0px;
+}
+.select span:nth-last-child(1) {
+  border-right: 1px solid black;
+  padding: 5% 0px;
+}
+.select span:nth-of-type(1) {
+  padding: 5% 0px;
+}
+.select span:hover {
+  background-color: #e4f73f;
+  transition: 0.25s;
+}
+.select .active {
+  background-color: #e4f73f;
+}
+.db {
+  width: 100%;
+  background-color: #DBAC01;
+  height: 500px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.db img {
+  width: 80%;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.input input {
+  margin: 5px;
+  width: 80%;
+  outline: none;
+  height: 70px;
+}
+.input input:nth-of-type(1) {
+  background: url(../images/name.png) white no-repeat center left 20px;
+  background-size: 120px;
+}
+.input input:nth-of-type(2) {
+  background: url(../images/age.png) white no-repeat center left 20px;
+  background-size: 120px;
+}
+.input input:nth-of-type(3) {
+  background: url(../images/tel.png) white no-repeat center left 20px;
+  background-size: 120px;
+}
+.input input:nth-of-type(1),
+.input input:nth-of-type(2),
+.input input:nth-of-type(3) {
+  font-size: 40px;
+  padding-left: 170px;
+  border: 1px solid gray;
+}
+.ck {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: inherit;
+  width: 80%;
+  font-size: 22px;
+  margin-top: 10px;
+}
+.ck label,
+.ck span,
+.ck input {
+  cursor: pointer;
+}
+.ck span {
+  font-weight: 700;
+}
+.ck label input {
+  height: 20px;
+  width: 20px;
+}
+
+
+
+@media screen and (max-width:1080px) {
+    .tilte h2 {
+      font-size: 2vw;
+    }
+    .select-title span,
+    .select span {
+      font-size: 2.2vw;
+    }
+    .Q {
+      margin-top: 4.5vw;
+      margin-bottom: 4.5vw;
+    }
+    .tilte {
+      margin-bottom: 2vw;
+      margin-left: 2vw;
+    }
+    .db {
+      width: 100%;
+      background-color: #DBAC01;
+      height: 45vw;
+      border-radius: 25px;
+    }
+    .ck {
+      font-size: 2vw;
+      margin-top: 1vw;
+    }
+    .ck label input {
+      width: 2vw;
+      height: 2vw;
+    }
+    .db img {
+      margin-top: 2vw;
+    }
+    .input input {
+      width: 80%;
+      height: 6.5vw;
+    }
+    .input input:nth-of-type(1) {
+      background: url(../images/name.png) white no-repeat center left 2vw;
+      background-size: 11.5vw;
+    }
+    .input input:nth-of-type(2) {
+      background: url(../images/age.png) white no-repeat center left 2vw;
+      background-size: 11.5vw;
+    }
+    .input input:nth-of-type(3) {
+      background: url(../images/tel.png) white no-repeat center left 2vw;
+      background-size: 11.5vw;
+    }
+    .input input:nth-of-type(1),
+    .input input:nth-of-type(2),
+    .input input:nth-of-type(3) {
+      font-size: 3.5vw;
+      padding-left: 16vw;
+    }
+}
